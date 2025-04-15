@@ -2,7 +2,7 @@ import { useEffect, useState, useRef } from "react";
 import { io } from "socket.io-client";
 import "./App.css";
 
-const socket = io("https://collaborative-env-l5m2.vercel.app/");
+const socket = io("https://collaborative-env-l5m2.vercel.app");
 const CLEAR_PASSWORD = import.meta.env.VITE_CLEAR_PASSWORD;
 
 function App() {
