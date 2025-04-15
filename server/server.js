@@ -10,14 +10,16 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: "http://localhost:5173", // Update to your frontend URL if different
+    origin: "https://collaborative-env.vercel.app", // Update to your frontend URL if different
     methods: ["GET", "POST"]
   }
 });
 
 app.use(cors());
 app.use(express.json());
-
+app.get('/',(req,res)=>{
+  res.send("Backend is working")
+})
 // mongoose.connect("mongodb://127.0.0.1:27017/realtime-doc", {
 //   useNewUrlParser: true,
 //   useUnifiedTopology: true
