@@ -23,7 +23,7 @@ app.get("/", (req, res) => {
 });
 
 // MongoDB connect...
-mongoose.connect(process.env.MONGO_URI, {
+mongoose.connect('mongodb+srv://karnatishainy22:UwM8GKhLUZgRHyDh@cluster0.epdxsuj.mongodb.net/', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 })
