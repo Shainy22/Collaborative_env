@@ -24,7 +24,7 @@ app.get('/',(req,res)=>{
 //   useNewUrlParser: true,
 //   useUnifiedTopology: true
 // });
-const URI='mongodb+srv://nithin20891a05e5:PWqCF5I0zjAFgIcf@cluster0.kcjk83s.mongodb.net/';
+const URI='mongodb+srv://nithin20891a05e5:PWqCF5I0zjAFgIcf@cluster0.kcjk83s.mongodb.net/test';
 try {
     mongoose.connect(URI
         ,{
